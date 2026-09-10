@@ -573,18 +573,18 @@
       cursor: pointer;
     }
 
-    /* RODAPÉ CENTRALIZADO */
+    /* RODAPÉ E LOGOMARCA REDUZIDOS */
     .app-footer {
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 1rem;
+      padding: 0.5rem; /* Reduzido de 1rem para deixar o rodapé menor */
       margin-top: auto;
       box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.05);
     }
 
     .footer-logo {
-      max-width: 60px;
+      max-width: 40px; /* Reduzido de 60px para diminuir a logomarca */
       height: auto;
       object-fit: contain;
       display: block;
@@ -731,7 +731,7 @@
     </main>
 
     <footer class="app-footer">
-      <img src="https://lh3.googleusercontent.com/gg/AEl1-C2Hj53DqfS1l9uE84hP0sKxU-f7yJ2L4t9q3b1_A" alt="Logomarca ST" class="footer-logo">
+      <img src="logo marca.png" alt="Logomarca ST" class="footer-logo">
     </footer>
   </div>
 
@@ -893,7 +893,7 @@
         document.getElementById('salarioValor').textContent = formatCurrency(state.salario || 0);
         document.getElementById('saldoValor').textContent = formatCurrency(totals.saldoAtual);
         document.getElementById('contasTotalTopo').textContent = formatCurrency(totals.totalContasPendentes);
-        document.getElementById('comprasTotalTopo').textContent = formatCurrency(totals.totalComprasPendentes);
+        document.getElementById('comprasTotalTopo').textContent = formatCurrency(totals.comprasTotalTopo || totals.totalComprasPendentes);
 
         document.getElementById('totalContas').textContent = formatCurrency(totals.totalContas);
         document.getElementById('totalCompras').textContent = formatCurrency(totals.totalCompras);
