@@ -573,17 +573,22 @@
       cursor: pointer;
     }
 
-    /* RODAPÉ */
+    /* RODAPÉ CENTRALIZADO */
     .app-footer {
-      text-align: center;
-      padding: 0.85rem 1rem;
-      font-size: 0.85rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
       margin-top: auto;
       box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.05);
     }
 
-    .app-footer p {
-      opacity: 0.95;
+    .footer-logo {
+      max-width: 60px;
+      height: auto;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto;
     }
 
     @media (max-width: 768px) {
@@ -682,7 +687,7 @@
     </main>
 
     <footer class="app-footer">
-      <p>&copy; 2026 Gestão Financeira. Todos os direitos reservados.</p>
+      <img src="https://lh3.googleusercontent.com/gg/AEl1-C2Hj53DqfS1l9uE84hP0sKxU-f7yJ2L4t9q3b1_A" alt="Logomarca ST" class="footer-logo">
     </footer>
   </div>
 
@@ -726,7 +731,7 @@
     </main>
 
     <footer class="app-footer">
-      <p>&copy; 2026 Gestão Financeira. Todos os direitos reservados.</p>
+      <img src="https://lh3.googleusercontent.com/gg/AEl1-C2Hj53DqfS1l9uE84hP0sKxU-f7yJ2L4t9q3b1_A" alt="Logomarca ST" class="footer-logo">
     </footer>
   </div>
 
